@@ -2,16 +2,14 @@ import { SitemapStream } from 'sitemap'
 import { createWriteStream } from 'fs'
 
 // Your site URL (must be live domain when deployed)
-const hostname = 'https://scholed.app'
+const hostname = 'https://ioakerala.org'
 
 // List of routes you want in sitemap
 const links = [
   { url: '/', changefreq: 'daily', priority: 1.0 },
-  { url: '/nios', changefreq: 'weekly', priority: 0.9 },
-  { url: '/degree', changefreq: 'weekly', priority: 0.9 },
-  { url: '/admission', changefreq: 'weekly', priority: 0.8 },
-  { url: '/about', changefreq: 'monthly', priority: 0.7 },
-  { url: '/contact', changefreq: 'monthly', priority: 0.7 },
+  { url: '/registration', changefreq: 'weekly', priority: 0.9 },
+  { url: '/verification/membership', changefreq: 'weekly', priority: 0.8 },
+  { url: '/verification/gsc', changefreq: 'weekly', priority: 0.8 },
   { url: '/terms-and-conditions', changefreq: 'monthly', priority: 0.5 },
   { url: '/privacy-policy', changefreq: 'monthly', priority: 0.5 },
 ]
